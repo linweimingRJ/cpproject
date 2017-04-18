@@ -15,6 +15,8 @@ int my_cp(const char *file1, const char *file2)
 	//int current_position = 0;
 	//int byte_count = 0;
 
+
+//I am xiaoming 
 	fd1 = open(file1, O_RDONLY  | O_CREAT, 0666);
 	if (-1 == fd1) {
 		perror("open file1 failed");
