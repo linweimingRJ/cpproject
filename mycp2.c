@@ -5,17 +5,12 @@
 #include <stdlib.h>
 #define BUF_SIZ 1024
 
-
-
 int my_cp(const char *file1, const char *file2)
 {
 	int fd1, fd2;
 	char buffer[BUF_SIZ];
 	int res;
-//I am linweiming
 
-
-//I am xiaoming 
 	fd1 = open(file1, O_RDONLY  | O_CREAT, 0666);
 	if (-1 == fd1) {
 		perror("open file1 failed");
@@ -46,14 +41,13 @@ int my_cp(const char *file1, const char *file2)
 			return -1;
 		}
 	}
+
 int main(int argc, char *argv[])
 {
 	if (3 != argc) {
 		printf("correct usage: ./my_cp file1 file2\n");
 		exit(EXIT_FAILURE);
 	}
-
-	
 	
 	int res = my_cp(argv[1], argv[2]);
 	if (-1 == res) {
