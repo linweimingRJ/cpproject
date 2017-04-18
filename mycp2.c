@@ -4,6 +4,9 @@
 #include <string.h>
 #include <stdlib.h>
 #define BUF_SIZ 1024
+
+
+
 int my_cp(const char *file1, const char *file2)
 {
 	int fd1, fd2;
