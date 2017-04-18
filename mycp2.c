@@ -4,6 +4,9 @@
 #include <string.h>
 #include <stdlib.h>
 #define BUF_SIZ 1024
+
+
+
 int my_cp(const char *file1, const char *file2)
 {
 	int fd1, fd2;
@@ -11,6 +14,8 @@ int my_cp(const char *file1, const char *file2)
 	int res;
 //I am linweiming
 
+
+//I am xiaoming 
 	fd1 = open(file1, O_RDONLY  | O_CREAT, 0666);
 	if (-1 == fd1) {
 		perror("open file1 failed");
