@@ -9,8 +9,7 @@ int my_cp(const char *file1, const char *file2)
 	int fd1, fd2;
 	char buffer[BUF_SIZ];
 	int res;
-	//int current_position = 0;
-	//int byte_count = 0;
+//I am linweiming
 
 	fd1 = open(file1, O_RDONLY  | O_CREAT, 0666);
 	if (-1 == fd1) {
@@ -50,13 +49,7 @@ int main(int argc, char *argv[])
 	}
 
 	
-	/*int res = write(fd, "Hey,man!", strlen("Hey,man!"));
-	if (-1 == res) {
-		perror("file1 write failed");
-		exit(EXIT_FAILURE);
-	}*/
 	
-	//应用 my_cp 函数拷贝文件
 	int res = my_cp(argv[1], argv[2]);
 	if (-1 == res) {
 		perror("copy failed");
